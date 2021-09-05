@@ -1,0 +1,25 @@
+plugins {
+    id("application")
+}
+
+repositories {
+    mavenCentral()
+}
+
+
+dependencies {
+    testImplementation("junit:junit:4.13.2")
+}
+
+
+application {
+    mainClass.set("my.little.Application")
+}
+
+java {
+    sourceCompatibility = JavaVersion.toVersion("16")
+    targetCompatibility = JavaVersion.toVersion("16")
+}
+
+
+
